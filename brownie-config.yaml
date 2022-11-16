@@ -1,0 +1,16 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.6.0
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.6.0"
+
+dotenv: .env
+
+networks:
+  goerli:
+    priority_fee: null
+
+wallets:
+  from_key: ${PRIVATE_KEY}
+  from_key_2: ${PRIVATE_KEY_2}
